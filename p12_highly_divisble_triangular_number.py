@@ -1,24 +1,23 @@
 import eulerlib,itertools
-def find_divisors(num):
-    divisors=[1,num]
-    for i in range(2,int(num/2)+1):
-        if num%i==0:
-            divisors.append(i)
-    return divisors
-def divisible_triangular_number():
-    x=7
-    while True:
-         triangle_number=x*(x+1)/2
-         divisors=find_divisors(triangle_number)
-         if len(divisors)>=200:
-            break
-         x+=1
-    return x
 
 
+def compute():
+    triangle=0
+    for i in itertools.count(1):
+        triangle+=i
+        if num_divisors(triangle)>500:
+            return str(triangle)
+
+# Returns the number of integers in the range [1, n] that divide n.
+def num_divisors(n):
+    (is_sq,sqroot)= eulerlib.is_square(n)
+    result = sum(2 for i in range(1, sqroot + 1) if n % i == 0)
+    if sqroot**2 == n:
+        result -= 1
+    return result
 
 if __name__ == '__main__':
-    print(divisible_triangular_number())
+    print(compute())
 
 
 
