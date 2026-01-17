@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{868149eb-2cb4-4ce8-9e00-1cb1bacf5355}</ProjectGuid>
-    <RootNamespace>LeetCode</RootNamespace>
+    <ProjectGuid>{11307b4a-734d-4f2f-822a-93704acaf660}</ProjectGuid>
+    <RootNamespace>LeetCodeCpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="LeetCode.cpp" />
+    <ClCompile Include="58_lengthLastWord.cpp" />
+    <ClCompile Include="64_plusOne.cpp" />
+    <ClCompile Include="LeetCodeCpp.cpp" />
+    <ClCompile Include="21_mergeTwoSortedList.cpp" />
+    <ClCompile Include="36_searchInsert.cpp" />
+    <ClCompile Include="20_validParanthesis.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

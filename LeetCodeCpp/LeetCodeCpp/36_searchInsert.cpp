@@ -22,10 +22,10 @@ int searchInsert(vector<int>& nums, int target)
 
 
 
-int main()
-{
-	vector<int> nums = { 1,3,4,5,6 };
-	int target = 8;
-
-	std::cout<<searchInsert(nums, target);
-}
+//int main()
+//{
+//	vector<int> nums = { 1,3,4,5,6 };
+//	int target = 8;
+//
+//	std::cout<<searchInsert(nums, target);
+//}

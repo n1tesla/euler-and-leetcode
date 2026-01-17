@@ -31,13 +31,13 @@ bool isValid(std::string s)
 }
 
 
-int main()
-{
-	std::string s = "([{])";
-	bool validParenthesis = isValid(s);
-	// Using boolalpha prints "true/false" instead of "1/0"
-	cout << boolalpha << validParenthesis << endl;
+//int main()
+//{
+//	std::string s = "([{])";
+//	bool validParenthesis = isValid(s);
+//	// Using boolalpha prints "true/false" instead of "1/0"
+//	cout << boolalpha << validParenthesis << endl;
+//
+//	return 0;
 
-	return 0;
-
-}
+//}
